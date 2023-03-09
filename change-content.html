@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My HTML Page</title>
+  <style>
+    /* Define a style for the "container" div */
+    .container {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    /* Define a style for the "heading" div */
+    .heading {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Define a style for the "content" div */
+    .content {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="heading" id="cha">Welcome to my HTML page!</div>
+    <div class="content">Here's some text on my page.</div>
+  </div>
+<button id="btn">change cont</button>
+<script>
+    document.getElementById("btn").onclick = function(){
+        document.getElementById("cha").innerHTML
+        = "success";
+    }
+</script>
+</body>
+</html>

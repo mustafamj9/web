@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My HTML Page</title>
+  <style>
+    /* Define a style for the "container" div */
+    .container {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    /* Define a style for the "heading" div */
+    .heading {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Define a style for the "content" div */
+    .content {
+      font-size: 16px;
+    }
+
+    .footer {
+       font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="heading" id="cha">Welcome to mustafa web services</div>
+    <div class="content">Hello world</div>
+  </div>
+  <div class="footer" id="fot">
+<p>copy right of mustafa web services</p>
+  </div>
+<button id="btn">change cont</button>
+<button id="btn1">change color</button>
+<script>
+    document.getElementById("btn").onclick = function(){
+        document.getElementById("cha").style.width = '100px';
+    }
+    document.getElementById("fot").onclick = function(){
+        document.getElementById("fot").style.width = '100px';
+    
+    document.getElementById("btn1").style.backgroundColor = 'black';
+    
+    document.getElementById("fot").style.backgroundColor = 'red';
+    }
+
+</script>
+</body>
+</html>
