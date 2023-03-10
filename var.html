@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My HTML Page</title>
+  <title>variablr & datatypes</title>
   <style>
     /* Define a style for the "container" div */
     .container {
@@ -42,17 +42,20 @@
 <button id="btn">change cont</button>
 <button id="btn1">change color</button>
 <script>
-    document.getElementById("btn").onclick = function(){
-        document.getElementById("cha").style.width = '100px';
-    }
-    document.getElementById("btn1").onclick = function(){
-        document.getElementById("fot").style.width = '100px';
-    
-    document.getElementById("btn1").style.backgroundColor = 'black';
-    
-    document.getElementById("fot").style.backgroundColor = 'red';
-    }
-
+ var x = 3;
+ window.console.log(x);
+ var y;
+ y = 5;
+ var z;
+window.console.log("I'm not defining the value of " + z);
+z = x + y;
+window.console.log("the value of z shloud be" + z);
+var greeting = "Hello";
+var firstname = "mustafa";
+var message = greeting + firstname;
+window.console.log("the message I'm getting" + message);
+var check = (x == 3);
+window.console.log("please check the value of x " +check);
 </script>
 </body>
 </html>
