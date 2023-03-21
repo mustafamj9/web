@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My HTML Page</title>
+  <title>variablr & datatypes</title>
   <style>
     /* Define a style for the "container" div */
     .container {
@@ -42,17 +42,18 @@
 <button id="btn">change cont</button>
 <button id="btn1">change color</button>
 <script>
-    document.getElementById("btn").onclick = function(){
-        document.getElementById("cha").style.width = '100px';
-    }
-    document.getElementById("btn1").onclick = function(){
-        document.getElementById("fot").style.width = '100px';
-    
-    document.getElementById("btn1").style.backgroundColor = 'black';
-    
-    document.getElementById("fot").style.backgroundColor = 'red';
-    }
-
+var color = 'pink';
+document.getElementById("btn").onclick = function(){
+    document.getElementById("cha").style.backgroundColor = color;
+}
+var x, y, z, appy;
+document.getElementById("btn1").onmouseover = function(){
+    x = Math.round(Math.random()*256);
+    y = Math.round(Math.random()*256);
+    z = Math.round(Math.random()*256);
+appy = 'rgb('+ x +', '+ y +','+ z +' )'
+document.getElementById("fot").style.backgroundColor = appy
+}
 </script>
 </body>
 </html>
