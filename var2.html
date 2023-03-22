@@ -42,34 +42,19 @@
 <button id="btn">change cont</button>
 <button id="btn1">change color</button>
 <script>
-// 
-//  var x = 3;
-//  window.console.log(x);
-//  var y;
-//  y = 5;
-//  var z;
-// window.console.log("I'm not defining the value of " + z);
-// z = x + y;
-// window.console.log("the value of z shloud be" + z);
-// var greeting = "Hello";
-// var firstname = "mustafa";
-// var message = greeting + firstname;
-// window.console.log("the message I'm getting" + message);
-// var check = (x == 3);
-// window.console.log("please check the value of x " +check);
-//  variables code with harry
-let a = 20;
-console.log(a);
-a = "mustafa";
-console.log(a);
-// dynamic var support
+// diff b/w let var const
+// var scope is globa & let is block 
+// var is re-declare type of variable 
+// no re-declare in let
+let b = "this";
+{
+    let b = "mustafa";
+    console.log(b);
+}
+console.log(b);
 
-// rules of var must begin with a $ _ not with digit
-// let 8mus = 20;
-// reserved word cannot be used
-// let var = 1;
-// case sensitve 
-
+// const value does not change & need to be declare  
+const author = "mustafa bhai"
 </script>
 </body>
 </html>
