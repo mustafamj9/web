@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>var let const</title>
+  <title>data type & objects</title>
   <style>
     /* Define a style for the "container" div */
     .container {
@@ -42,19 +42,32 @@
 <button id="btn">change cont</button>
 <button id="btn1">change color</button>
 <script>
-// diff b/w let var const
-// var scope is globa & let is block 
-// var is re-declare type of variable 
-// no re-declare in let
-let b = "this";
-{
-    let b = "mustafa";
-    console.log(b);
-}
-console.log(b);
+// primitive data types are fundamental data bulid-in 
+// N Number
+// N null
+// S Symbol
+// S String
+// B Boolean
+// B BigInt
+// U undefined Note we can declare as undefined or leave as blanck
+let a =  100;
+let b = null;
+let c = Symbol("moonn");
+let d = "mustafa";
+let e = true;
+let f = BigInt("11000");
+let g = undefined;
+console.log(a, b, c, d, e, f, g);
+console.log(typeof g);
 
-// const value does not change & need to be declare  
-const author = "mustafa bhai"
+// objects in JS are key vaule pair or non primitive data types
+const item = {
+  "mus" : true,
+  "ammu" : 100,
+  "far": undefined
+}
+console.log(item["mus"]);
+
 </script>
 </body>
 </html>
