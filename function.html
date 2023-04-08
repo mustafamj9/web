@@ -1,56 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>variablr & datatypes</title>
-  <style>
-    /* Define a style for the "container" div */
-    .container {
-      background-color: #f2f2f2;
-      padding: 20px;
-      border: 1px solid #ccc;
-    }
-
-    /* Define a style for the "heading" div */
-    .heading {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    /* Define a style for the "content" div */
-    .content {
-      font-size: 16px;
-    }
-
-    .footer {
-       font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      background-color: aquamarine;
-    }
-  </style>
+  <title>Functions</title>
 </head>
 <body>
-
-  <div class="container">
-    <div class="heading" id="cha">Welcome to mustafa web services</div>
-    <div class="content">Hello world</div>
-  </div>
-  <div class="footer" id="fot">
-<p>copy right of mustafa web services</p>
-  </div>
-<button id="btn">change cont</button>
-<button id="btn1">change color</button>
 <script>
-function greeting1(){
-    window.alert('HELLo');
+const Asslumuelekum = () => {
+    console.log("Asslumuelekum");
+    return "kyrt"
 }
-//greeting1();
-function sum(a, b){
-    return a+b;
+function test(x, y) {
+    console.log("done");
+    return Math.round(100 + (x + y)/2);  // to make value round figure
 }
-var x = sum(3,7);
-window.alert(x);
+let v = Asslumuelekum ();   // invoking the function
+console.log(v);
+let a = 7.8;
+let b = 5.6;
+let c = 3.9;
+
+console.log("the result a & b ", test(a, b));
+
+console.log("the result b & c ", test(b, c));
+
+console.log("the result b & c ", test(b, c));
 </script>
 </body>
 </html>
