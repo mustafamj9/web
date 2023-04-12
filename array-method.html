@@ -6,18 +6,18 @@
 <body>
 <script>
 // array are mutable can be modified/changed but string can't be modified/changed
-let m = [100, 55, 23, 30, null, "not there"];
+// let m = [100, 55, 23, 30, null, "not there"];
 
 // to string
 
-let b = m.toString(); // b is now string
-console.log(typeof b);
-console.log(b);
+// let b = m.toString(); // b is now string
+// console.log(typeof b);
+// console.log(b);
 
-// join
+// // join
 
-let c = m.join(" ");
-console.log(c);
+// let c = m.join(" ");
+// console.log(c);
 
 // pop out
 
@@ -26,10 +26,24 @@ console.log(c);
 
 //push
 
-let e = m.push(11);
-console.log(e, m);
+// let e = m.push(11);
+// console.log(e, m);
 
 // shift & unshift add & remove first element from the array respectively
+// delete note delelete method will the value of array but not the size of the array 
+// concat used to join two or more arrays
+// by shor array is used sort array in alphabetical order not in numerical order
+
+// let s = [2, 6, 3, 8, 1, 99, 2343, 26, 33];
+// s.sort()
+// console.log(s);
+
+let compare = (a, b)=> {
+return a -b
+}
+ let s = [2, 6, 3, 8, 1, 99, 2343, 26, 33];
+s.sort(compare)
+console.log(s);
 </script>
 </body>
 </html>
